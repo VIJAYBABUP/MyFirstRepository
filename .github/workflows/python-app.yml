@@ -16,4 +16,4 @@ jobs:
 
     - name: Test step
       run: |
-        print("Hello World")
+        python -c "print('hello world')"
