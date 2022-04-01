@@ -1,0 +1,19 @@
+
+
+name: Python application
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test_job:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+
+    - name: Test step
+      run: |
+        print("Hello World")
