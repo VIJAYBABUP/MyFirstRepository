@@ -4,6 +4,9 @@ name: Python application
 
 on:
   workflow_dispatch:
+    inputs:
+      name:
+        description: "sample description"
 
 jobs:
   test_job:
@@ -16,4 +19,4 @@ jobs:
 
     - name: Test step
       run: |
-        python -c "print('hello world')"
+        print("${{ github.event.inputs.name }}")
