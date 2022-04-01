@@ -18,4 +18,5 @@ jobs:
 
     - name: Test step
       run: |
-        print("${{ github.event.inputs.name }}")
+        python -c "print('${{ github.event.inputs.name }}')"
+        
