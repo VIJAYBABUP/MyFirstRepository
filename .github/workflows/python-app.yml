@@ -2,6 +2,10 @@ name: Python application
 
 on:
   workflow_dispatch:
+    inputs:
+      name:
+        description: "sample description"
+        default: "Hello world"
 
 jobs:
   test_job:
